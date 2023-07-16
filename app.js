@@ -47,12 +47,6 @@
             this.classList.add("active-btn");
             document.querySelector(".active").classList.remove("active");
             document.getElementById(button.dataset.id).classList.add("active");
-            if(button.dataset.id == "home"){
-                typedTextSpan.innerHTML= "";
-                textArrayIndex = 0;
-                charIndex = 0;
-                 if(textArray.length) setTimeout(type, newTextDelay + 250);
-            }
         })
     });
     let mode = localStorage.getItem('mode');
