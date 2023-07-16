@@ -51,6 +51,7 @@
                 typedTextSpan.innerHTML= "";
                 textArrayIndex = 0;
                 charIndex = 0;
+                 if(textArray.length) setTimeout(type, newTextDelay + 250);
             }
         })
     });
