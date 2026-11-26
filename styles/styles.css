@@ -667,6 +667,14 @@ section {
   height: 64px;
   object-fit: contain;
 }
+
+
+.tech-item img.tech-icon-contrast {
+  padding: 0.25rem;
+  border-radius: 12px;
+  background-color: #e8edf2;
+  filter: brightness(1.25);
+}
 .tech-carousel:hover .tech-track,
 .tech-carousel:focus-within .tech-track {
   animation-play-state: paused;
