@@ -41,14 +41,23 @@
     document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
         if(textArray.length) setTimeout(type, newTextDelay + 250);
     });
-    [...document.querySelectorAll(".control")].forEach(button => {
-        button.addEventListener("click", function() {
-            document.querySelector(".active-btn").classList.remove("active-btn");
-            this.classList.add("active-btn");
-            document.querySelector(".active").classList.remove("active");
-            document.getElementById(button.dataset.id).classList.add("active");
-        })
-    });
+    const sectionLinks = [...document.querySelectorAll(".controls .control")];
+
+    function updateActiveSectionLink() {
+        const activeHash = window.location.hash || "#home";
+        sectionLinks.forEach(link => {
+            const isActive = link.hash === activeHash;
+            link.classList.toggle("active-btn", isActive);
+            if (isActive) {
+                link.setAttribute("aria-current", "location");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    window.addEventListener("hashchange", updateActiveSectionLink);
+    updateActiveSectionLink();
     let mode = localStorage.getItem('mode');
 
 
