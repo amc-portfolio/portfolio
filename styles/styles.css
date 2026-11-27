@@ -433,6 +433,69 @@ section {
   text-align: center;
 }
 
+.experience-summary {
+  margin: 3rem 0 1rem;
+  padding: 2rem;
+  border: 1px solid var(--color-grey-5);
+  border-radius: 15px;
+  background-color: var(--color-grey-5);
+  box-shadow: var(--box-shadow-1);
+}
+.experience-summary-heading {
+  max-width: 850px;
+  margin-bottom: 1.75rem;
+}
+.experience-summary-heading h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.experience-summary-heading h3 span {
+  color: var(--color-secondary);
+}
+.experience-summary-heading p,
+.experience-summary-item > p:last-child {
+  color: var(--color-grey-1);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.experience-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.experience-summary-item {
+  padding: 0.25rem 1rem 0.25rem 1.15rem;
+  border-left: 2px solid var(--color-secondary);
+}
+.experience-summary-item .experience-summary-date {
+  margin-bottom: 0.4rem;
+  color: var(--color-secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.experience-summary-item h4 {
+  margin-bottom: 0.55rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.experience-summary-item h4 span {
+  color: var(--color-grey-2);
+  font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+  .experience-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experience-summary {
+    padding: 1.25rem;
+  }
+}
+
 .portfolios {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

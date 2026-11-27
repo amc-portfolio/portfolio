@@ -31,8 +31,8 @@
                     <br>
                     and I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span>
                 </h1>
-                <p>
-                    
+                <p class="hero-summary">
+                    I’m a software engineer with 4 years of experience building business applications, API integrations, web crawlers, and workflow automations. I work primarily with PHP and frameworks including Symfony, Laravel, and CodeIgniter, and have recently built MCP integrations and AI-assisted code-review workflows.
                 </p>
                 <div class="btn-con">
                     <a href="docs/Ace Cabilangan CV.pdf" class="main-btn" target="_blank">
@@ -44,41 +44,6 @@
         </div>
     </header>
     <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">About Me</span></h2>
-            </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About me</h4>
-                    <p>
-                        I completed a rigorous four-year program at Bataan Peninsula State University, where I earned a Bachelor of Science degree in Information Technology with a specialized focus on Network and Web Applications. Even prior to embarking on my college journey, I found myself deeply enthralled by the captivating realm of programming. It never ceased to amaze me how the intricate syntaxes and constructs within coding languages possess the extraordinary power to craft sophisticated, yet user-friendly applications and systems.
-                    </p>
-                  
-                    <div class="btn-con">
-                        <a href="docs/Ace Cabilangan CV.pdf" class="main-btn" target="_blank">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">3+</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">4</p>
-                            <p class="small-text">Employers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
@@ -86,6 +51,29 @@
             <p class="port-text">
                 A selection of products and client projects I've contributed to, with a look at my role and the work behind each one.
             </p>
+            <div class="experience-summary" aria-labelledby="experience-summary-title">
+                <div class="experience-summary-heading">
+                    <h3 id="experience-summary-title">Experience <span>Summary</span></h3>
+                    <p>Across four years, I’ve built and improved web applications, integrations, and automation—from responsive websites and enterprise portals to data workflows and AI-enabled developer tools.</p>
+                </div>
+                <div class="experience-summary-grid">
+                    <article class="experience-summary-item">
+                        <p class="experience-summary-date">May 2024 – Nov 2026</p>
+                        <h4>PHP Developer <span>· Gravitiq</span></h4>
+                        <p>Built e-commerce web crawlers, data parsers, API integrations, and Slack notifications to automate business operations. Developed an MCP server for AI access to Newton’s database and established AI-assisted code-review workflows and reusable agent skills.</p>
+                    </article>
+                    <article class="experience-summary-item">
+                        <p class="experience-summary-date">Feb 2023 – May 2024</p>
+                        <h4>Junior Software Engineer <span>· Mobile Group Inc.</span></h4>
+                        <p>Enhanced the Robinsons Tenant Portal, including its BIR module and Partner’s Final Accountability feature. Integrated SAP and GA4, delivered Scrum features, and remediated security-assessment findings.</p>
+                    </article>
+                    <article class="experience-summary-item">
+                        <p class="experience-summary-date">Oct 2022 – Jan 2023</p>
+                        <h4>Freelance Front-End Developer <span>· Oxford Business Group</span></h4>
+                        <p>Built mobile-responsive layouts for new websites and worked with QA and the project manager to identify and resolve cross-browser compatibility issues.</p>
+                    </article>
+                </div>
+            </div>
             <div class="portfolios">
                 <article class="portfolio-item portfolio-card">
                     <div class="portfolio-featured-image">
@@ -281,9 +269,6 @@
     <div class="controls">
         <div class="control active-btn" data-id="home" >
             <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
         </div>
         <div class="control" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
